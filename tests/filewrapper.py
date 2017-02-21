@@ -1,5 +1,6 @@
-import sys
 import os
+import sys
+
 import bjoern
 
 W = {
@@ -18,5 +19,4 @@ def app(env, start_response):
     start_response('200 ok', [('Content-Length', str(os.path.getsize(F)))])
     return wrapped
 
-import bjoern
 bjoern.run(app, '0.0.0.0', 8080)

@@ -2,7 +2,9 @@
 # -*- coding: utf-8 -*-
 
 from time import time
+
 import bjoern
+
 
 def start():
     def return_tuple(environ, start_response):

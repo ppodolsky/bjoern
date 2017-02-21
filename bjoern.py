@@ -1,7 +1,7 @@
 import os
 import socket
-import _bjoern
 
+import _bjoern
 
 _default_instance = None
 LISTEN_BACKLOG = 1024

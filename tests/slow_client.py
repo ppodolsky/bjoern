@@ -4,10 +4,10 @@ The client can work fine if server is localhost.  Otherwise time_request
 client usually takes the same time as long_request.
 """
 
-import sys
 import socket
-import time
+import sys
 import threading
+import time
 
 if len(sys.argv) > 2:
     print "usage: %s [host[:port]]" % sys.argv[0]

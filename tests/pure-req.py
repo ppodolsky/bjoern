@@ -1,5 +1,5 @@
-import sys
 import socket
+import sys
 
 conn = socket.create_connection(('0.0.0.0', 8080))
 msgs = [

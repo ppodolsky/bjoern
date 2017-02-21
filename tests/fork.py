@@ -1,6 +1,7 @@
-import bjoern
-import os, signal
+import os
+import signal
 
+import bjoern
 
 NUM_WORKERS = 8
 worker_pids = []

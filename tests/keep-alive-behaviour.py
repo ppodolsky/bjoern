@@ -1,7 +1,10 @@
+import httplib
 import os
 import random
-import httplib
 import socket
+import thread
+
+import bjoern
 
 HOST = ('127.0.0.1', 9000)
 
@@ -117,8 +120,6 @@ class Testcase(object):
         # second item is to trick bjoern's internal optimizations:
         return [self.body, '']
 
-import thread
-import bjoern
 thread.start_new_thread(bjoern.run, (dispatcher,)+HOST)
 
 import time; time.sleep(0.1)

@@ -25,4 +25,5 @@ def app(env, start_response):
     return ['hello']
 
 import bjoern
+
 bjoern.run(app, '0.0.0.0', 8080)

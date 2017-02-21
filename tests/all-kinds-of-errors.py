@@ -1,5 +1,7 @@
 import random
 
+import bjoern
+
 
 def invalid_header_type(environ, start_response):
     start_response('200 ok', None)
@@ -22,5 +24,4 @@ apps = [invalid_header_tuple_item, invalid_header_tuple, invalid_header_type]
 def randomizer(*args, **kwargs):
     return random.choice(apps)(*args, **kwargs)
 
-import bjoern
 bjoern.run(randomizer, '0.0.0.0', 8080)

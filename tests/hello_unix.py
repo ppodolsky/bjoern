@@ -1,5 +1,6 @@
 import sys
-from hello import  *
+
+from hello import *
 
 if __name__ == '__main__':
     try:

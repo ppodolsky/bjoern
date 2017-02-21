@@ -1,10 +1,9 @@
-import os
-import time
-import sys
 import httplib
+import os
 import subprocess
+import sys
+import time
 from collections import defaultdict
-
 
 N_PROCESSES = 3
 N_REQUESTS_PER_PROCESS = 100

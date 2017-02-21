@@ -1,9 +1,10 @@
-import time
-import threading
-import bjoern
+import httplib
 import os
 import signal
-import httplib
+import threading
+import time
+
+import bjoern
 
 HOST = ('127.0.0.1', 9000)
 

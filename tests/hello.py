@@ -1,5 +1,7 @@
-import bjoern
 from random import choice
+
+import bjoern
+
 
 def app1(env, sr):
     print env
